@@ -1,7 +1,7 @@
 'use client'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuTrigger } from "./ui/dropdown-menu";
-import { Button } from "./ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuTrigger } from "../atomic/molecules/dropdown-menu";
+import { Button } from "../atomic/atoms/button";
+import { Avatar, AvatarFallback, AvatarImage } from "../atomic";
 import Link from "next/link";
 
 export function UserNav() {

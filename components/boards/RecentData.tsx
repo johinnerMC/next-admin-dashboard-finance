@@ -108,7 +108,7 @@ export const columns: ColumnDef<Sales>[] = [
   },
 ]
 
-export function RecentSales() {
+export function RecentData() {
   return (
     <div className="w-full">
       <DataTable data={data} columns={columns} ></DataTable>

@@ -2,10 +2,12 @@
 import { useSideBarToggle } from "@/hooks/use-sidebar-toggle";
 import classNames from "classnames";
 import { BsList } from "react-icons/bs"
-import { UserNav } from "./usernav";
-import { ThemeSwitcher } from "./theme-switcher";
 
-export default function Header() {
+import { ThemeSwitcher } from "../atomic";
+import { UserNav } from "./Usernav";
+
+
+export function TopMenu() {
 
     const { toggleCollapse, invokeToggleCollapse } = useSideBarToggle();
     const sidebarToggle = () => {
@@ -19,7 +21,7 @@ export default function Header() {
     return (
         <header className={headerStyle}>
             <div className="h-16 flex items-center justify-between">
-                <button onClick={sidebarToggle} className="order-2 sm:order-1 shrink-btn float-right bg-sidebar-muted text-sidebar-muted-foreground hover:bg-foreground hover:text-background ml-3 rounded-md w-[30px] h-[30px] flex items-center justify-center shadow-md shadow-black/10  transition duration-300 ease-in-out">
+                <button title="sidebarToggle"  onClick={sidebarToggle} className="order-2 sm:order-1 shrink-btn float-right bg-sidebar-muted text-sidebar-muted-foreground hover:bg-foreground hover:text-background ml-3 rounded-md w-[30px] h-[30px] flex items-center justify-center shadow-md shadow-black/10  transition duration-300 ease-in-out">
                     <BsList />
                 </button>
 

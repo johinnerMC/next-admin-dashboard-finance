@@ -3,14 +3,16 @@
 import * as React from "react"
 import { useTheme } from "next-themes"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../atoms/button"
+
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/atomic/molecules/dropdown-menu"
 import { CheckIcon, Palette } from "lucide-react"
+
 
 export function ThemeSwitcher() {
     const { setTheme, theme } = useTheme()
